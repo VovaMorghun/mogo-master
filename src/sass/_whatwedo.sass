@@ -1,0 +1,59 @@
+.whatwedo
+    padding-top: 110px
+    padding-bottom: 110px
+
+.wedo
+    display: flex
+    &-img
+        width: 50%
+        margin-right: 20px
+
+.accordione
+    width: 50%
+    &-text
+        padding: 20px
+        border-bottom: 2px solid #e5e5e5
+        border-right: 2px solid #e5e5e5
+        border-left: 2px solid #e5e5e5
+        font-family: 'Roboto', sans-serif
+        font-size: 14px
+        color: #bdbdbd
+        font-weight: 300
+        font-style: italic
+        line-height: 18px
+        display: none        
+    &-item
+        margin-bottom: 10px
+        &.active .accordione-text
+            display: block
+        &.active .accordione-header:after
+            transform: rotate(225deg)
+    &-header
+        display: flex
+        align-items: center
+        padding: 15px 20px
+        border: 2px solid #e5e5e5
+        position: relative
+        cursor: pointer
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            width: 16px
+            height: 16px
+            border-right: 3px solid #cccccc
+            border-bottom: 3px solid #cccccc
+            right: 25px
+            top: 44%
+            transform: translateY(-50%) rotate(45deg)
+            transition: all .5s
+        &__img
+            width: 30px
+            height: 30px
+            margin-right: 16px
+        &__title
+            text-transform: uppercase
+            font-size: 12px
+            font-weight: 700
+
+    

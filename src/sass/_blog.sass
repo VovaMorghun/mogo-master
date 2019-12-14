@@ -1,0 +1,83 @@
+.blog
+    padding-bottom: 110px
+    &-block
+        display: flex
+        align-items: stretch
+        justify-content: space-between
+
+.block
+    &-item
+        margin-right: 20px
+        position: relative
+        
+        &:last-child
+            margin-right: 0
+        &__img
+            margin-bottom: 20px
+        &__title
+            text-transform: uppercase
+            font-weight: 400
+            font-size: 17px
+            margin-bottom: 20px
+        &__text
+            margin-bottom: 20px
+            font-family: 'Roboto', sans-serif
+            color: #a0a0a0
+            line-height: 24px
+        &:hover .block-number
+            opacity: 1
+            left: -10px
+       
+    &-number
+        opacity: 0
+        position: absolute
+        top: 41%
+        left: -30px
+        width: 60px
+        height: 70px
+        background-color: #95e1d3
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: space-around
+        transition: all .5s linear
+    &-date
+        &__day
+            margin-bottom: 8px
+            display: block
+            color: #ffffff
+            font-weight: 600
+            font-family: 'Roboto', sans-serif
+            font-size: 18px
+        &__month
+            color: #ffffff
+            font-family: 'Roboto', sans-serif
+            font-size: 15px
+            font-style: italic
+            
+    
+    &-info
+        display: flex
+        align-items: center
+        
+    &-watcher
+        display: flex
+        align-items: center
+        margin-right: 20px
+        &__icon
+            width: 25px
+            // height: 25px
+            margin-right: 5px
+        &__number
+            color: #afafaf
+           
+    &-message
+        display: flex
+        align-items: center
+        &__icon
+            width: 20px
+            height: 20px
+            margin-right: 5px
+        &__number
+            color: #afafaf
+          

@@ -1,0 +1,33 @@
+.openmap
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-image: url('../img/openmap/bg.jpg') 
+    background-size: cover
+    padding-top: 60px
+    padding-bottom: 80px
+    &-title
+        font-family: 'Montserrat', sans-serif
+        font-size: 24px
+        font-weight: 700
+        text-transform: uppercase
+        color: #f38181
+        position: relative
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            width: 60px
+            height: 3px
+            background-color: #f38181
+            top: 40px
+            left: 50%
+            transform: translateX(-50%)
+            text-align: center
+            
+    &-icon
+        display: block
+        width: 20px
+        margin-bottom: 20px
+        text-align: center

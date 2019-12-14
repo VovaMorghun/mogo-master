@@ -1,0 +1,46 @@
+.people
+    padding-top: 65px
+    background-image: url('../img/people/images/bg_02.jpg')
+    background-size: cover
+    &-block
+        display: flex
+        flex-wrap: wrap
+    &-item
+        width: 50%
+        position: relative
+        padding-left: 180px
+        padding-right: 40px
+        margin-bottom: 70px
+        min-height: 110px
+        &__avatar
+            max-width: 110px
+            border-radius: 50%
+            position: absolute
+            top: 0
+            left: 0
+        &__name
+            text-transform: uppercase
+            font-weight: 600
+            margin-bottom: 15px                
+        &__job
+            font-family: 'Roboto', sans-serif
+            font-style: italic
+            font-weight: 300
+            font-size: 14
+            position: relative
+            margin-bottom: 50px
+            color: #a6a6a6
+            &::before
+                content:  ''
+                display: block
+                position: absolute
+                bottom: -20px
+                left: 0
+                width: 60px
+                height: 4px
+                background-color: #f38181
+        &__text
+            font-family: 'Roboto', sans-serif
+            font-size: 15px
+            color: #a6a6a6
+            line-height: 25px
