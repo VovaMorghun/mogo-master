@@ -121,7 +121,12 @@
         width: 100%
 
     .insta
-        width: 100%
+        padding-top: 20px
+        width: 50%
+        text-align: center
+        margin: 0px auto
+
+    
     
     
 
@@ -166,9 +171,12 @@
 
     .intro-inner
         &__suptitle 
-            font-size: 60px
-        &__title
-            font-size: 103px
+            font-size: 40px
+
+
+    .intro-inner__title
+        font-size: 60px
+        
 
     .about-counter>.container
         padding: 0px
@@ -207,8 +215,19 @@
         margin-bottom: 24px
         font-size: 18px
 
-    
+    .card-photo__social a 
+        padding: 12px
+        font-size: 20px      
+        width: 45px
+        height: 45px
+        
 
+    .section-top
+        padding-top: 50px
+
+
+    .devices-item__iphone
+        right: 0
 
     
 
@@ -217,10 +236,9 @@
 @media screen and ( max-width: 576px )
 
     .intro-inner
-        &__suptitle 
-            font-size: 60px
+        padding-top: 150px
         &__title
-            font-size: 103px
+            font-size: 50px
 
     .about-counter>.container
         padding: 0px
@@ -230,6 +248,32 @@
             border-left: none
         &:last-child
             border: none
+
+    .nav
+        display: none
+
+    .intro-slider
+        flex-direction: column
+
+    .intro-inner__btn
+        margin-bottom: 20px
+
+    .intro-slider__item
+        text-align: center
+        margin-right: 0
+        min-width: 120px
+
+    .card-photo
+        flex-direction: column
+        &__item
+            width: 90%
+            margin-bottom: 100px
+            margin-right: 0
+            &:last-child
+                margin-bottom: 0
+       
+        
+
 
 
 

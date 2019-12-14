@@ -143,6 +143,7 @@ body {
 }
 
 .intro-slider__item {
+  text-align: left;
   margin-right: 30px;
   font-size: 18px;
   font-weight: 500;
@@ -421,6 +422,7 @@ body {
   max-width: 600px;
   margin: 0px auto;
   position: relative;
+  padding-bottom: 70px;
 }
 
 .devices-item {
@@ -436,7 +438,6 @@ body {
 }
 
 .whatwedo {
-  padding-top: 110px;
   padding-bottom: 110px;
 }
 
@@ -1648,7 +1649,10 @@ body {
   }
 
   .insta {
-    width: 100%;
+    padding-top: 20px;
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
   }
 
   .mogo-title {
@@ -1701,11 +1705,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .intro-inner__suptitle {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .intro-inner__title {
-    font-size: 103px;
+    font-size: 60px;
   }
 
   .about-counter > .container {
@@ -1765,15 +1769,30 @@ body {
     margin-bottom: 24px;
     font-size: 18px;
   }
+
+  .card-photo__social a {
+    padding: 12px;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .section-top {
+    padding-top: 50px;
+  }
+
+  .devices-item__iphone {
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  .intro-inner__suptitle {
-    font-size: 60px;
+  .intro-inner {
+    padding-top: 150px;
   }
 
   .intro-inner__title {
-    font-size: 103px;
+    font-size: 50px;
   }
 
   .about-counter > .container {
@@ -1786,5 +1805,45 @@ body {
 
   .counters-item:last-child {
     border: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .intro-slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .intro-inner__btn {
+    margin-bottom: 20px;
+  }
+
+  .intro-slider__item {
+    text-align: center;
+    margin-right: 0;
+    min-width: 120px;
+  }
+
+  .card-photo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .card-photo__item {
+    width: 90%;
+    margin-bottom: 100px;
+    margin-right: 0;
+  }
+
+  .card-photo__item:last-child {
+    margin-bottom: 0;
   }
 }
