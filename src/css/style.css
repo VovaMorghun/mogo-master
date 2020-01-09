@@ -376,6 +376,8 @@ body {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .blocks-item {
@@ -391,7 +393,7 @@ body {
 }
 
 .blocks-item__img {
-  width: 18%;
+  width: 14%;
   margin-right: 26px;
 }
 
@@ -411,7 +413,6 @@ body {
 }
 
 .uniqe {
-  padding-top: 110px;
   background: url("../img/uniqe/uniqe-bg.jpg") center no-repeat;
   height: 100%;
   background-size: cover;
@@ -422,7 +423,6 @@ body {
   max-width: 600px;
   margin: 0px auto;
   position: relative;
-  padding-bottom: 70px;
 }
 
 .devices-item {
@@ -674,7 +674,6 @@ body {
 }
 
 .team {
-  padding-top: 95px;
   padding-bottom: 110px;
 }
 
@@ -835,6 +834,7 @@ body {
 }
 
 .logos-list {
+  margin: 0 -15px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -849,8 +849,11 @@ body {
   justify-content: space-between;
 }
 
+.logos-list__item {
+  padding: 0 15px;
+}
+
 .work {
-  padding-top: 110px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -884,7 +887,7 @@ body {
 }
 
 .photos-col {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -957,6 +960,7 @@ body {
 
 .photos-descr__text {
   font-weight: 300;
+  font-size: 12px;
 }
 
 .people {
@@ -1047,7 +1051,19 @@ body {
 
 .block-item {
   margin-right: 20px;
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .block-item:last-child {
@@ -1056,6 +1072,7 @@ body {
 
 .block-item__img {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .block-item__title {
@@ -1080,10 +1097,9 @@ body {
 .block-number {
   opacity: 0;
   position: absolute;
-  top: 41%;
+  top: 68%;
   left: -30px;
-  width: 60px;
-  height: 70px;
+  padding: 20px;
   background-color: #95e1d3;
   text-align: center;
   display: -webkit-box;
@@ -1514,6 +1530,10 @@ body {
     font-size: 9px;
     line-height: 20px;
   }
+
+  .block-number {
+    top: 68%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1592,8 +1612,7 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 70%;
-    margin-bottom: 10px;
-    margin: 0px auto 50px;
+    margin: 0px auto 30px;
   }
 
   .blogs-item__img {
@@ -1650,9 +1669,21 @@ body {
 
   .insta {
     padding-top: 20px;
-    width: 50%;
+    width: 60%;
     text-align: center;
     margin: 0px auto;
+  }
+
+  .photos-descr__logo {
+    margin-bottom: 10px;
+  }
+
+  .photos-descr__title {
+    font-size: 12px;
+  }
+
+  .photos-descr__text {
+    font-size: 10px;
   }
 
   .mogo-title {
@@ -1701,6 +1732,36 @@ body {
     font-size: 10px;
     font-weight: 400;
   }
+
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .section-top {
+    padding-top: 60px;
+  }
+
+  .section-top__describe {
+    margin-bottom: 40px;
+  }
+
+  .devices {
+    margin-bottom: 50px;
+  }
+
+  .block-number {
+    padding: 12px;
+    top: 68%;
+  }
+
+  .block-date__day {
+    font-size: 15px;
+  }
+
+  .block-date__month {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1739,7 +1800,7 @@ body {
   }
 
   .blocks-item__img {
-    width: 8%;
+    width: 7%;
   }
 
   .counters {
@@ -1784,6 +1845,111 @@ body {
   .devices-item__iphone {
     right: 0;
   }
+
+  .logos-list {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .logos-list__item {
+    width: 33.3333%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .logos-list__item img {
+    max-width: 120px;
+    margin: 0px auto;
+  }
+
+  .card-photo__title--team {
+    font-size: 14px;
+  }
+
+  .photos {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .photos-col {
+    width: 50%;
+  }
+
+  .photos-descr__logo {
+    margin-bottom: 17px;
+  }
+
+  .photos-descr__title {
+    font-size: 15px;
+  }
+
+  .photos-descr__text {
+    font-size: 12px;
+  }
+
+  .wedo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .wedo-img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .accordione {
+    width: 100%;
+  }
+
+  .people-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .people-item {
+    width: 100%;
+    padding-right: 50px;
+  }
+
+  .block-number {
+    top: 50%;
+  }
+
+  .block-item__title {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+  }
+
+  .block-item__text {
+    line-height: 18px;
+  }
+
+  .block-date__day {
+    font-size: 15px;
+  }
+
+  .block-date__month {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1793,6 +1959,10 @@ body {
 
   .intro-inner__title {
     font-size: 50px;
+  }
+
+  .intro-inner__title:after {
+    height: 0;
   }
 
   .about-counter > .container {
@@ -1838,12 +2008,155 @@ body {
   }
 
   .card-photo__item {
-    width: 90%;
     margin-bottom: 100px;
     margin-right: 0;
   }
 
   .card-photo__item:last-child {
     margin-bottom: 0;
+  }
+
+  .card-photo__item--team {
+    margin-bottom: 40px;
+  }
+
+  .card-photo__title--team {
+    font-size: 18px;
+  }
+
+  .logos-list__item {
+    width: 50%;
+  }
+
+  .logos-list__item img {
+    max-width: 120px;
+  }
+
+  .photos-descr__logo {
+    margin-bottom: 10px;
+  }
+
+  .photos-descr__title {
+    font-size: 12px;
+  }
+
+  .photos-descr__text {
+    font-size: 10px;
+  }
+
+  .devices-item__iphone {
+    width: 42%;
+  }
+
+  .devices-item {
+    width: 78%;
+  }
+
+  .blocks-text {
+    max-width: 300px;
+  }
+
+  .blocks-item {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .blocks-item__img {
+    margin-right: 20px;
+    width: 8%;
+  }
+
+  .people-item__job::before {
+    height: 2px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .people-item {
+    position: static;
+    text-align: center;
+    padding: 0px 30px;
+  }
+
+  .people-item__avatar {
+    position: static;
+    margin: 0px auto  20px;
+  }
+
+  .blog-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .block-item {
+    margin-right: 0;
+    padding: 0 50px;
+    margin-bottom: 20px;
+  }
+
+  .block-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .block-number {
+    padding: 16px;
+    top: 100%;
+    -webkit-transform: translateY(-90%);
+    -ms-transform: translateY(-90%);
+    transform: translateY(-90%);
+  }
+
+  .block-item__title {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+  }
+
+  .block-item__text {
+    line-height: 18px;
+  }
+
+  .mogo-followus a {
+    margin-right: 9px;
+  }
+
+  .mogo-followus__title {
+    margin-right: 10px;
+  }
+
+  .social-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .social-form__input {
+    border-right: 1px solid #cfcfcf;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .social-form__btn {
+    width: 70%;
   }
 }
