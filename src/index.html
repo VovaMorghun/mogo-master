@@ -16,16 +16,16 @@
 <body>
 
 
-    <header class="header">
+    <header class="header " id="header">
         <div class="container">
             <div class="header-inner">
                 <a class="header-inner__logo" href="">MoGo</a>
-                <nav class="nav">
-                    <a class="nav-link" href="#">about</a>
-                    <a class="nav-link" href="#">service</a>
-                    <a class="nav-link" href="#">work</a>
-                    <a class="nav-link" href="#">blog</a>
-                    <a class="nav-link" href="#">contact</a>
+                <nav class="nav" id="nav">
+                    <a class="nav-link" href="#" data-scroll="#about">about</a>
+                    <a class="nav-link" href="#" data-scroll="#service">service</a>
+                    <a class="nav-link" href="#" data-scroll="#work">work</a>
+                    <a class="nav-link" href="#" data-scroll="#blog">blog</a>
+                    <a class="nav-link" href="#" data-scroll="#contact">contact</a>
 
                     <div class="basketserch">
                         <div class="basketserch-cart">
@@ -36,13 +36,17 @@
                         </div>
                     </div>
                 </nav>
-
+                <div class="header-toggle" id='toggle'>
+                    <div class="header-toggle_item"></div>
+                </div>
             </div>
+
+
 
         </div>
     </header>
 
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro-inner">
                 <div class="intro-inner__suptitle">Creative Template</div>
@@ -67,7 +71,7 @@
         </div>
     </div>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="section-top">
                 <h2 class="section-top__suptitle">What we do</h3>
@@ -157,7 +161,7 @@
     </section>
     <!-- /.about -->
 
-    <section class="services">
+    <section class="services" id="service">
         <div class="container">
             <div class="section-top">
                 <h2 class="section-top__suptitle">We work with</h2>
@@ -291,41 +295,43 @@
                 </div>
                 <!-- /.wedo-img -->
                 <div class="accordione">
-                    <div class="accordione-item">
+                    <div class="accordione-item" data-collapse="#text_1">
                         <div class="accordione-header">
                             <img src="img/whatwedo/equalizer.png" alt="" class="accordione-header__img">
                             <div class="accordione-header__title">photography</div>
                             <!-- /.accordione-header__title -->
                         </div>
                         <!-- /.accordione-header -->
-                        <div class="accordione-text">
+                        <div class="accordione-text" id="text_1">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi saepe quia ea assumenda facilis mollitia omnis distinctio tempora laboriosam commodi necessitatibus eligendi nesciunt ad, eveniet tenetur, et quod doloribus enim.
                         </div>
                         <!-- /.accordione-text -->
                     </div>
                     <!-- /.accordione-item -->
-                    <div class="accordione-item ">
+                    <div class="accordione-item " data-collapse="#text_2">
                         <div class="accordione-header">
                             <img src="img/whatwedo/equalizer-1.png" alt="" class="accordione-header__img">
                             <div class="accordione-header__title">creativity</div>
                             <!-- /.accordione-header__title -->
                         </div>
                         <!-- /.accordione-header -->
-                        <div class="accordione-text">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi saepe quia ea assumenda facilis mollitia omnis distinctio tempora laboriosam commodi necessitatibus eligendi nesciunt ad, eveniet tenetur, et quod doloribus enim.
+                        <div class="accordione-text" id="text_2">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi saepe quia ea assumenda facilis mollitia omnis distinctio Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil distinctio perspiciatis nulla aperiam sed quidem. tempora laboriosam
+                            commodi necessitatibus eligendi nesciunt ad, eveniet tenetur, et quod doloribus enim.
                         </div>
                         <!-- /.accordione-text -->
                     </div>
                     <!-- /.accordione-item -->
-                    <div class="accordione-item ">
+                    <div class="accordione-item " data-collapse="#text_3">
                         <div class="accordione-header">
                             <img src="img/whatwedo/eye.png" alt="" class="accordione-header__img">
                             <div class="accordione-header__title">web design</div>
                             <!-- /.accordione-header__title -->
                         </div>
                         <!-- /.accordione-header -->
-                        <div class="accordione-text">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi saepe quia ea assumenda facilis mollitia omnis distinctio tempora laboriosam commodi necessitatibus eligendi nesciunt ad, eveniet tenetur, et quod doloribus enim.
+                        <div class="accordione-text" id="text_3">
+                            Lorem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat enim at aperiam quisquam consequuntur obcaecati est. Incidunt ducimus maiores nisi! ipsum dolor sit amet consectetur adipisicing elit. Sequi saepe quia ea assumenda facilis mollitia
+                            omnis distinctio tempora laboriosam commodi necessitatibus eligendi nesciunt ad, eveniet tenetur, et quod doloribus enim.
                         </div>
                         <!-- /.accordione-text -->
                     </div>
@@ -339,31 +345,14 @@
     </section>
     <!-- /.whatwedo -->
 
-
-
     <div class="quote">
         <div class="container">
             <div class="slider-wrapper">
                 <div class="sliderbutton sliderbutton--prev" id="prev"></div>
 
                 <div class="slider-slides">
-                    <div class="slider-item" id='lastClone'>
-                        <div class="slider-item__img">
-                            <img src="img/quote/quote-1.png" alt="">
-                        </div>
-                        <!-- /.slider-item__img -->
-                        <div class="slider-item__text">
-                            <div class="main-text">
-                                3 slide Dolor, Lorem ipsum dolormodi! Labore tenetur libero molestias! Esse, molestiae quos? nesciunt excepturi laborum debitis itaque corporis
 
-                            </div>
-                            <div class="main-text_subtitle">
-                                Jhon Doe
-                            </div>
-                            <!-- /.slider-item__text -->
-                        </div>
-                    </div>
-                    <!-- /.slider-item -->
+
                     <div class="slider-item">
                         <div class="slider-item__img">
                             <img src="img/quote/quote-1.png" alt="">
@@ -399,6 +388,48 @@
                         </div>
                         <!-- /.slider-item__img -->
                         <div class="slider-item__text">
+                            <div class='main-text'>2 slide Dolor, nesciunt excepturi laborum debitis itaque corporis</div>
+                            <div class="main-text_subtitle">
+                                Jhon Doe
+                            </div>
+                        </div>
+                        <!-- /.slider-item__text -->
+                    </div>
+                    <!-- /.slider-item -->
+                    <div class="slider-item">
+                        <div class="slider-item__img">
+                            <img src="img/quote/quote-1.png" alt="">
+                        </div>
+                        <!-- /.slider-item__img -->
+                        <div class="slider-item__text">
+                            <div class='main-text'>2 slide Dolor, nesciunt excepturi laborum debitis itaque corporis</div>
+                            <div class="main-text_subtitle">
+                                Jhon Doe
+                            </div>
+                        </div>
+                        <!-- /.slider-item__text -->
+                    </div>
+                    <!-- /.slider-item -->
+                    <div class="slider-item">
+                        <div class="slider-item__img">
+                            <img src="img/quote/quote-1.png" alt="">
+                        </div>
+                        <!-- /.slider-item__img -->
+                        <div class="slider-item__text">
+                            <div class='main-text'>2 slide Dolor, nesciunt excepturi laborum debitis itaque corporis</div>
+                            <div class="main-text_subtitle">
+                                Jhon Doe
+                            </div>
+                        </div>
+                        <!-- /.slider-item__text -->
+                    </div>
+                    <!-- /.slider-item -->
+                    <div class="slider-item">
+                        <div class="slider-item__img">
+                            <img src="img/quote/quote-1.png" alt="">
+                        </div>
+                        <!-- /.slider-item__img -->
+                        <div class="slider-item__text">
                             <div class='main-text'>3 slide Dolor, nesciunt excepturi laborum debitis itaque corporis</div>
                             <div class="main-text_subtitle">
                                 Jhon Doe
@@ -407,20 +438,7 @@
                         <!-- /.slider-item__text -->
                     </div>
                     <!-- /.slider-item -->
-                    <div class="slider-item" id='firstClone'>
-                        <div class="slider-item__img">
-                            <img src="img/quote/quote-1.png" alt="">
-                        </div>
-                        <!-- /.slider-item__img -->
-                        <div class="slider-item__text">
-                            <div class='main-text'>1 slide Dolor, nesciunt excepturi laborum debitis itaque corporis</div>
-                            <div class="main-text_subtitle">
-                                Jhon Doe
-                            </div>
-                        </div>
-                        <!-- /.slider-item__text -->
-                    </div>
-                    <!-- /.slider-item -->
+
 
                 </div>
                 <!-- /.slider -->
@@ -430,12 +448,6 @@
         <!-- /.container -->
     </div>
     <!-- /.quote -->
-
-
-
-
-
-
 
     <section class="team">
         <div class="container">
@@ -562,8 +574,7 @@
     </div>
     <!-- /.logos -->
 
-
-    <div class="work">
+    <div class="work" id="work">
         <div class="container">
             <div class="section-top">
                 <div class="section-top__suptitle">Who we are</div>
@@ -649,10 +660,6 @@
     </div>
     <!-- /.work -->
 
-
-
-
-
     <section class="people">
         <div class="container">
             <div class="section-top">
@@ -724,7 +731,7 @@
     </section>
     <!-- /.people -->
 
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="container">
             <div class="section-top">
                 <div class="section-top__suptitle">Our stories</div>
@@ -1032,11 +1039,14 @@
     </div>
     <!-- /.instablogs -->
 
-    <footer class="footer">
-        <div class="footer-title">
-            <span class='footer-title__copy'>&copy;</span> 2016 MoGo free PSD template by <span class='footer-title__autor'>Villya Morgunovich</span>
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-title">
+                <span class='footer-title__copy'>&copy;</span> 2016 MoGo free PSD template by <span class='footer-title__autor'>Villya Morgunovich</span>
+            </div>
+            <!-- /.footer-title -->
         </div>
-        <!-- /.footer-title -->
+        <!--/ .container-->
     </footer>
     <!-- /.footer -->
 

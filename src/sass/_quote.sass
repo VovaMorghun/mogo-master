@@ -4,64 +4,65 @@
     width: 100%
 
 .slider-wrapper
-    display: block
-      
-    width:  90%
+
+    position: relative
+    width: 60%
     margin: 0px auto
-    height: 200px
-    position: relative
-    overflow: hidden   
+//     height: 200px
+    // position: relative
+//     overflow: hidden   
     
 
 
-.slider-slides
-    display: block
-    width: 100%
-    height: 100%
-    position: relative
-    left: 0
-    top: 0
+// .slider-slides
+//     padding: 0 30px
+//     display: block
+//     width: 100%
+//     height: 100%
+//     position: relative
+//     left: 0
+//     top: 0
     
 
-.slider-item
-    transform: translateY(-50%)
-    padding-left: 100px
-    padding-right: 100px
-    width: 100%    
-    position: absolute
-    top: 50%
-    display: flex
-    align-items: center
-    // margin-right: 50px
-    &__img
-        // margin-left: 100px
-        padding: 40px
-        border: 4px solid #95e1d3
-        width: 150px
-        height: 150px
-    &__text
-        margin-left: 60px
-        width: 60%
-        font-family: 'Roboto' , sans-serif
-        font-style: italic
-        font-size: 24px
-        font-weight: 300
-        // margin-right: 100px
+// .slider-item
+//     transform: translateY(-50%)
+//     padding-left: 100px
+//     padding-right: 100px
+//     width: 100%    
+//     position: absolute
+//     top: 50%
+//     display: flex
+//     align-items: center
+//     // margin-right: 50px
+//     &__img
+//         // margin-left: 100px
+//         padding: 40px
+//         border: 4px solid #95e1d3
+//         width: 150px
+//         height: 150px
+//     &__text
+//         margin-left: 60px
+//         width: 60%
+//         font-family: 'Roboto' , sans-serif
+//         font-style: italic
+//         font-size: 24px
+//         font-weight: 300
+//         // margin-right: 100px
 
-.slider-item:nth-child(1)
-    left: 0
+// .slider-item:nth-child(1)
+//     left: 0
 
-.slider-item:nth-child(2)
-    left: 100%
+// .slider-item:nth-child(2)
+//     left: 100%
 
-.slider-item:nth-child(3)
-    left: 200%
+// .slider-item:nth-child(3)
+//     left: 200%
 
-.slider-item:nth-child(4)
-    left: 300%
+// .slider-item:nth-child(4)
+//     left: 300%
 
-.slider-item:nth-child(5)
-    left: 400%
+// .slider-item:nth-child(5)
+//     left: 400%
 
 
 .main-text
@@ -71,6 +72,7 @@
         margin-top: 20px
         position: relative
         padding-left: 50px
+        
         &::before
             content: ''
             display: block
@@ -95,29 +97,29 @@
 //     align-items: center
 //     position: absolute
 //     left: 0
-//     &-item         
-//         width: 100% 
-//         display: flex        
-//         &__img
-//             margin-left: 100px
-//             padding: 40px
-//             border: 4px solid #95e1d3
-//             width: 150px
-//             height: 150px
-//         &__text
-//             margin-left: 60px
-//             width: 60%
-//             font-family: 'Roboto' , sans-serif
-//             font-style: italic
-//             font-size: 24px
-//             font-weight: 300
+    // &-item         
+    //     width: 100% 
+    //     display: flex        
+    //     &__img
+    //         margin-left: 100px
+    //         padding: 40px
+    //         border: 4px solid #95e1d3
+    //         width: 150px
+    //         height: 150px
+    //     &__text
+    //         margin-left: 60px
+    //         width: 60%
+    //         font-family: 'Roboto' , sans-serif
+    //         font-style: italic
+    //         font-size: 24px
+    //         font-weight: 300
 
 // .wrapper
-//     display: block
-//     width: 1100px
+//     // display: block
+//     // width: 1100px
 //     overflow: hidden
-//     height: 150px
-//     margin-right: 0
+//     // height: 150px
+//     // margin-right: 0
 //     margin: 0px auto
 //     position: relative
             
@@ -140,6 +142,7 @@
         width: 25px
         height: 25px
         opacity: 1
+        cursor: pointer
 
 .sliderbutton--prev
     &:after
